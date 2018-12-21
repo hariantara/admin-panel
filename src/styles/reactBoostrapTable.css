@@ -1,0 +1,10 @@
+.react-bootstrap-table-page-btns-ul {
+    list-style-type: none;
+    margin: 0 0 0 20%;
+    padding: 0;
+    width: 15%;
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}

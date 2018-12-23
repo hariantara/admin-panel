@@ -20,6 +20,8 @@ import Clinic from './pages/Clinic'
 import EditUser from './components/Profile/UserDetail'
 import EditDoctor from './components/Doctor/DoctorDetail'
 import EditClinic from './components/Clinic/ClinicDetail'
+import CreateAdmin from './components/Profile/CreateComponent'
+import CreateDoctor from './components/Doctor/CreateDoctorComponent'
 
 class App extends Component {
   render() {
@@ -34,7 +36,9 @@ class App extends Component {
               <Route exact path='/' component={Login}/>
               <Route path='/home' component={Home} />
               <Route path='/detail/:id' component={EditUser}/>
+              <Route path='/createadmin' component={CreateAdmin}/>
               <Route path='/doctordetail/:id' component={EditDoctor} />
+              <Route path='/createdoctor' component={CreateDoctor}/>
               <Route path='/clinicdetail/:id' component={EditClinic}/>
               <Route path='/profile' component={Profile}/>
               <Route path='/doctor' component={Doctor}/>

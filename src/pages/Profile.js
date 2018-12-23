@@ -51,7 +51,7 @@ class Profile extends Component {
                     <SideBar props={this.state} />
                 </div>
                 <div className="col-md-10">
-                    <ListProfile/>
+                    <ListProfile create='/createadmin'/>
                 </div>
             </div>
         )

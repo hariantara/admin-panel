@@ -6,7 +6,7 @@ import axios from 'axios'
 import { graphql, compose, withApollo } from 'react-apollo'
 import gql from 'graphql-tag'
 
-import Shared from '../environment/Url'
+import Shared from '../../environment/Url'
 
 export default (props) => {
     return(

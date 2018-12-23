@@ -29,7 +29,7 @@ class Clinic extends Component {
                     <SideBar props={this.state} />
                 </div>
                 <div className="col-md-10">
-                    <ListClinic/>
+                    <ListClinic create={'/createclinic'}/>
                 </div>
             </div>
         )

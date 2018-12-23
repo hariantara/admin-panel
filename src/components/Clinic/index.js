@@ -78,7 +78,7 @@ class GetClinicList extends Component {
         return (
             <div className="material_table col-md-12 container-fluid">
                 <div style={{ marginLeft: '15%', marginTop: '7%' }}>
-                    <Tables data={this.state.dataUsers} columns={columns} title={`All Clinic Data`} rowEvents={rowEvents} />
+                    <Tables data={this.state.dataUsers} columns={columns} title={`All Clinic Data`} rowEvents={rowEvents} create={this.props.create}/>
                 </div>
             </div>
         )

@@ -7,6 +7,6 @@ let configs = {
     }
 }
 export default {
-    uploadurl: `http://localhost:4000/api/upload`,
+    uploadurl: `http://35.247.177.193:4000/api/upload`,
     configs: configs
 }

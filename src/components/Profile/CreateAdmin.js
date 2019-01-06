@@ -92,7 +92,7 @@ class Register extends Component {
             const img = new FormData()
             img.append('file', this.state.photo)
 
-            let uploadPhoto = await axios.post(`http://localhost:4000/api/upload`, img, configs)
+            let uploadPhoto = await axios.post(`${url}`, img, configs)
             console.log('uploadPhoto Register: ', uploadPhoto)
 
             if (uploadPhoto.data.filePaths.file){

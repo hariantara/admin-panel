@@ -13,7 +13,7 @@ import { WebSocketLink } from 'apollo-link-ws';
 import { getMainDefinition } from 'apollo-utilities';
 
 // const httpLink = createHttpLink({ uri: "http://localhost:3000/api/graphql" });
-const httpLink = createHttpLink({ uri: "http://localhost:4000/graphql" });
+const httpLink = createHttpLink({ uri: "http://35.247.177.193:4000/graphql" });
 
 const authMiddleware = new ApolloLink((operation, forward) => {
     // add the authorization to the headers
@@ -29,7 +29,7 @@ const authMiddleware = new ApolloLink((operation, forward) => {
 
 
 const wsLink = new WebSocketLink({
-    uri: `ws://localhost:4000/subscriptions`,
+    uri: `ws://35.247.177.193:4000/subscriptions`,
     options: {
         reconnect: true,
         connectionParams: {

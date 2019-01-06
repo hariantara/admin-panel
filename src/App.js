@@ -22,6 +22,7 @@ import EditDoctor from './components/Doctor/DoctorDetail'
 import EditClinic from './components/Clinic/ClinicDetail'
 import CreateAdmin from './components/Profile/CreateComponent'
 import CreateDoctor from './components/Doctor/CreateDoctorComponent'
+import CreateClinic from './components/Clinic/CreateClinic'
 
 class App extends Component {
   render() {
@@ -34,11 +35,12 @@ class App extends Component {
             {/* <div className='col-md-13' style={{ marginLeft: '25%', padding: '1px 16px', height: '1000px' }}> */}
             <div className='col-md-12'>
               <Route exact path='/' component={Login}/>
-              <Route path='/home' component={Home} />
+              {/* <Route path='/home' component={Home} /> */}
               <Route path='/detail/:id' component={EditUser}/>
               <Route path='/createadmin' component={CreateAdmin}/>
               <Route path='/doctordetail/:id' component={EditDoctor} />
               <Route path='/createdoctor' component={CreateDoctor}/>
+              <Route path='/createclinic' component={CreateClinic}/>
               <Route path='/clinicdetail/:id' component={EditClinic}/>
               <Route path='/profile' component={Profile}/>
               <Route path='/doctor' component={Doctor}/>

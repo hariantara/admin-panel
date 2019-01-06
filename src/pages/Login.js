@@ -62,7 +62,7 @@ class Login extends Component {
         }else{
             let token = login.data.loginAdmin.token
             let setLocalStorage = await localStorage.setItem('token', token)
-            window.location.assign('/home')
+            window.location.assign('/clinic')
         }
     }
 
@@ -99,11 +99,11 @@ class Login extends Component {
                             Log in
                         </button>
                     </div>
-                    <div className="clearfix">
+                    {/* <div className="clearfix"> */}
                         {/* <label className="pull-left checkbox-inline"><input type="checkbox"/> Remember me</label> */}
-                        <p onClick={this.register} className="pull-left checkbox-inline">Create an Account</p>
+                        {/* <p onClick={this.register} className="pull-left checkbox-inline">Create an Account</p>
                         <p onClick={this.forget} className="pull-left checkbox-inline">Forget Password ?</p>
-                    </div>
+                    </div> */}
                 </span>    
             </div>
         )

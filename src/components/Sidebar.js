@@ -77,7 +77,7 @@ class Sidebar extends Component {
                             }
                         </div>
                     </li>
-                    <li><Link to='/home'>Home</Link></li>
+                    {/* <li><Link to='/home'>Home</Link></li> */}
                     <li><Link to='/profile'>Profile</Link></li>
                     <li><Link to='/doctor'>Doctor</Link></li>
                     <li><Link to='/clinic'>Clinic</Link></li>
